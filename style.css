@@ -1,0 +1,68 @@
+
+body { margin: 0; font-family: Poppins, sans-serif; background: #121212; color: #fff; }
+header { padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; background: #1f1f1f; }
+nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+.hero { text-align: center; padding: 3rem; background: linear-gradient(135deg,#1f1f1f,#2e2e2e); }
+.cards-wrapper { display: flex; align-items: center; margin-top: 1rem; }
+.cards { display: flex; overflow-x: auto; }
+.card { background: #232323; padding: 1rem; margin: 0.5rem; border-radius: 10px; min-width: 200px; }
+.glow-text { display: flex; justify-content: center; font-size: 2rem; font-weight: bold; color: transparent; }
+.glow-text span { opacity: 0.1; animation: glow 2s infinite; animation-delay: calc(var(--i) * 0.15s); }
+@keyframes glow { 0%,100%{opacity:0.1;text-shadow:none;} 50%{opacity:1;color:#00c0ff;text-shadow:0 0 10px #00c0ff;} }
+.search-container { text-align: center; margin: 1rem; }
+#searchInput { padding: 0.5rem; width: 80%; border-radius: 20px; border: none; }
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); }
+.modal-content { background: #1f1f1f; padding: 20px; border-radius: 10px; width: 300px; margin: 10% auto; text-align: center; }
+.modal-btn { padding: 0.5rem 1rem; background: #00c0ff; border: none; border-radius: 20px; cursor: pointer; }
+.ai-suggest-btn { margin: 1rem auto; display: block; padding: 0.8rem 1.5rem; background: #00c0ff; border: none; border-radius: 25px; cursor: pointer; }
+.upload-section { padding: 2rem; text-align: center; }
+.upload-section input, .upload-section textarea { margin: 0.5rem; padding: 0.5rem; width: 80%; max-width: 500px; border-radius: 5px; border: none; }
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: inherit;
+}
+.theme-toggle {
+  cursor: pointer;
+}
+
+/* Carousel */
+.carousel {
+  padding: 1em;
+}
+.carousel-container {
+  display: flex;
+  overflow-x: scroll;
+  gap: 1em;
+}
+.paper-card {
+  min-width: 200px;
+  height: 120px;
+  background: #ddd;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+/* Theme variables */
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+.dark-theme {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+}
