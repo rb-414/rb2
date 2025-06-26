@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="glow-text">
+      <span>R</span><span>E</span><span>S</span><span>E</span><span>A</span><span>R</span><span>C</span><span>H</span>
+      <span>B</span><span>O</span><span>O</span><span>K</span>
+    </h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="upload.html">Upload</a>
+      <a href="#">Explore</a>
+      <a href="#" id="loginLink">Login</a>
+    </nav>
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter Username" />
+        <input type="password" id="password" placeholder="Enter Password" />
+        <div class="center-container">
+        <button class="modal-btn" onclick="login()">Login</button>
+        </div>
+       </div>
+      </div>
+  </header>
+
+  <section class="hero">
+    <h2>Explore Research. Collaborate Freely.</h2>
+    <p>Connect with students, researchers, and institutions around the world.</p>
+    <button class="hero-btn" onclick="scrollToGallery()">Get Started</button>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h3>Trending Research Papers</h3>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search by topic, author, institution, or keyword...">
+    </div>
+    <div class="cards-wrapper">
+      <button id="scroll-left">&#8592;</button>
+      <div class="cards" id="cards">
+        <div class="card"><h4>AI in Healthcare</h4><p>Dr. Meera – NIT Calicut</p></div>
+        <div class="card"><h4>Quantum Computing</h4><p>Aryan – IIT Madras</p></div>
+        <div class="card"><h4>Sustainable Cities</h4><p>Sana – MIT</p></div>
+        <div class="card"><h4>5G IoT</h4><p>Aditya – Stanford</p></div>
+      </div>
+      <button id="scroll-right">&#8594;</button>
+    </div>
+    <button class="ai-suggest-btn" onclick="aiSuggest()">🔮 AI Suggest</button>
+  </section>
+
+  <footer><p>© 2025 Research Book. All rights reserved.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">ResearchBook</div>
+  <ul class="nav-menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="upload.html">Upload</a></li>
+    <li><a href="#">Explore</a></li>
+    <li><a href="#">Profile</a></li>
+  </ul>
+  <div class="theme-toggle" onclick="toggleTheme()">🌓</div>
+</nav>
+
+<!-- Trending Papers Carousel -->
+<section class="carousel">
+  <h2>Trending Papers</h2>
+  <div class="carousel-container">
+    <div class="paper-card">Paper 1</div>
+    <div class="paper-card">Paper 2</div>
+    <div class="paper-card">Paper 3</div>
+  </div>
+</section>
